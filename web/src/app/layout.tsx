@@ -1,23 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import MedicalDisclaimer from "./components/MedicalDisclaimer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Yogi Ninja | Pregnancy-Safe Ninja Creami Recipes",
+  title: "Yogi Ninja | Seek Your Signature Scoop",
   description:
-    "Yogi Ninja helps expecting mothers safely discover and track Ninja Creami Deluxe recipes. Featuring daily nausea check-ins, a virtual freezer timer, and strict prenatal ingredient safety.",
+    "Yogi Ninja helps expecting mothers safely discover and track Ninja Creami Deluxe recipes. Featuring daily nausea check-ins, a virtual freezer vault, and strict prenatal ingredient safety.",
   keywords: ["Ninja Creami", "pregnancy recipes", "first trimester", "vegetarian ice cream", "nausea-friendly"],
 };
 
@@ -29,11 +18,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body
         className="min-h-full flex flex-col"
-        style={{ background: "var(--background)", color: "var(--foreground)" }}
+        style={{ 
+          background: "var(--gradient-soft)", 
+          color: "var(--color-text-primary)",
+          backgroundAttachment: "fixed"
+        }}
       >
         <MedicalDisclaimer variant="banner" />
         <Navigation />
@@ -41,10 +34,8 @@ export default function RootLayout({
           id="main-content"
           style={{
             flex: 1,
-            maxWidth: "72rem",
             width: "100%",
             margin: "0 auto",
-            padding: "2rem 1.5rem 4rem",
           }}
         >
           {children}
@@ -52,17 +43,20 @@ export default function RootLayout({
         <footer
           id="main-footer"
           style={{
-            borderTop: "1px solid var(--border-soft)",
-            padding: "1.5rem",
+            borderTop: "1px solid var(--color-border)",
+            padding: "3rem 1.5rem",
             textAlign: "center",
-            fontSize: "0.8rem",
-            color: "var(--text-muted)",
+            background: "var(--color-background)"
           }}
         >
-          <p style={{ margin: 0 }}>
-            🥤 Yogi Ninja — Made with love for expecting mothers.{" "}
-            <span style={{ color: "var(--yogi-violet)" }}>Always consult your healthcare provider.</span>
-          </p>
+          <div style={{ maxWidth: "80rem", margin: "0 auto" }}>
+            <p style={{ margin: "0 0 0.5rem", fontSize: "0.875rem", color: "var(--color-text-secondary)", fontWeight: 600 }}>
+              Yogi Ninja — Mindful Precision. Unapologetic Indulgence.
+            </p>
+            <p style={{ margin: 0, fontSize: "0.75rem", color: "var(--color-text-muted)" }}>
+              Always consult your healthcare provider. Crafted with love for expecting mothers.
+            </p>
+          </div>
         </footer>
       </body>
     </html>

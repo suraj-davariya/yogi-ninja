@@ -14,12 +14,12 @@
 - [x] layout.tsx — Root layout with navigation and disclaimer wrappers
 - [x] page.tsx — Homepage wiring all components together
 
-## Phase Three: Data Ingestion Batch 1 (Pending)
+## Phase Three: Data Ingestion Batch 1 (Complete)
 
-- [ ] Scrape `jhermann/ice-creamery` recipes
-- [ ] Filter against pregnancy safety rules
-- [ ] Write output to `web/src/data/recipes.json`
-- [ ] Wire `TagSearch.tsx` to use `recipes.json`
+- [x] Scrape `jhermann/ice-creamery` recipes
+- [x] Filter against pregnancy safety rules
+- [x] Write output to `web/src/data/recipes.json`
+- [x] Wire `TagSearch.tsx` to use `recipes.json`
 
 ## Phase Four: Data Ingestion Batch 2 (Pending)
 
