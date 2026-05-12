@@ -1,0 +1,368 @@
+[
+  {
+    "id": "strawberry-oat-sorbet",
+    "name": "Strawberry Oat Sorbet",
+    "emoji": "🍓",
+    "base": "Oat milk",
+    "tags": ["Fruity", "Sorbet", "Oat milk", "Nausea-safe", "Dairy-free"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 180,
+    "ingredients": [
+      { "item": "Fresh strawberries", "amount": "1 cup" },
+      { "item": "Unsweetened oat milk", "amount": "1 cup" },
+      { "item": "Maple syrup", "amount": "2 tbsp" },
+      { "item": "Fresh lemon juice", "amount": "1 tsp" }
+    ],
+    "instructions": [
+      "Blend strawberries, oat milk, maple syrup, and lemon juice until completely smooth.",
+      "Pour into the Ninja Creami pint container, filling to the max fill line.",
+      "Freeze for exactly 24 hours on a flat surface.",
+      "Remove from freezer. Run the pint under warm water for 30 seconds.",
+      "Process on the Sorbet setting. Serve immediately."
+    ],
+    "respinFix": [
+      { "problem": "Crumbly or powdery texture", "fix": "Add 1 tablespoon oat milk and use the Respin setting on the Deluxe." },
+      { "problem": "Too icy", "fix": "Let the pint sit at room temperature for 2 minutes before respinning." }
+    ]
+  },
+  {
+    "id": "banana-vanilla-cream",
+    "name": "Banana Vanilla Cream",
+    "emoji": "🍌",
+    "base": "Pasteurized milk",
+    "tags": ["Creamy", "Mild", "Banana", "Lite Ice Cream", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "calories": 220,
+    "ingredients": [
+      { "item": "Ripe banana", "amount": "1 medium" },
+      { "item": "Pasteurized whole milk", "amount": "1 cup" },
+      { "item": "Pasteurized Greek yogurt", "amount": "0.25 cup" },
+      { "item": "Pure vanilla extract", "amount": "0.5 tsp" },
+      { "item": "Honey", "amount": "1 tbsp" }
+    ],
+    "instructions": [
+      "Blend banana, milk, yogurt, vanilla, and honey until silky smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds before processing.",
+      "Process on the Lite Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Dense or heavy texture", "fix": "Add 2 tablespoons pasteurized milk and respin." },
+      { "problem": "Not sweet enough after spinning", "fix": "Drizzle with a small amount of honey before serving." }
+    ]
+  },
+  {
+    "id": "mango-coconut-sorbet",
+    "name": "Mango Coconut Sorbet",
+    "emoji": "🥭",
+    "base": "Coconut milk",
+    "tags": ["Fruity", "Sorbet", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 195,
+    "ingredients": [
+      { "item": "Frozen mango chunks", "amount": "1.5 cups" },
+      { "item": "Light coconut milk", "amount": "0.75 cup" },
+      { "item": "Fresh lime juice", "amount": "1 tsp" },
+      { "item": "Maple syrup", "amount": "1 tbsp" }
+    ],
+    "instructions": [
+      "Blend mango, coconut milk, lime juice, and maple syrup until completely smooth.",
+      "Pour into the pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Remove from freezer, run under warm water for 30 seconds.",
+      "Process on the Sorbet setting."
+    ],
+    "respinFix": [
+      { "problem": "Icy chunks remain", "fix": "Let sit 3 minutes then respin on Sorbet." },
+      { "problem": "Too runny", "fix": "Return to freezer for 30 minutes then respin." }
+    ]
+  },
+  {
+    "id": "peach-ginger-sorbet",
+    "name": "Peach Ginger Sorbet",
+    "emoji": "🍑",
+    "base": "Oat milk",
+    "tags": ["Fruity", "Sorbet", "Oat milk", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 165,
+    "ingredients": [
+      { "item": "Ripe peaches, peeled and sliced", "amount": "1.5 cups" },
+      { "item": "Unsweetened oat milk", "amount": "0.75 cup" },
+      { "item": "Fresh ginger, grated", "amount": "0.25 tsp" },
+      { "item": "Maple syrup", "amount": "1.5 tbsp" },
+      { "item": "Fresh lemon juice", "amount": "1 tsp" }
+    ],
+    "instructions": [
+      "Blend peaches, oat milk, ginger, maple syrup, and lemon juice until fully smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours on a flat surface.",
+      "Run under warm water for 30 seconds before processing.",
+      "Process on the Sorbet setting."
+    ],
+    "respinFix": [
+      { "problem": "Grainy texture", "fix": "Add 1 tablespoon oat milk and respin on Sorbet." },
+      { "problem": "Too tart", "fix": "Drizzle with 1 teaspoon honey and gently fold before serving." }
+    ]
+  },
+  {
+    "id": "blueberry-yogurt-cream",
+    "name": "Blueberry Yogurt Cream",
+    "emoji": "🫐",
+    "base": "Pasteurized yogurt",
+    "tags": ["Fruity", "Creamy", "Lite Ice Cream"],
+    "nauseaFriendly": false,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "calories": 210,
+    "ingredients": [
+      { "item": "Fresh blueberries", "amount": "1 cup" },
+      { "item": "Pasteurized Greek yogurt (plain)", "amount": "1 cup" },
+      { "item": "Honey", "amount": "2 tbsp" },
+      { "item": "Pure vanilla extract", "amount": "0.25 tsp" }
+    ],
+    "instructions": [
+      "Blend blueberries, yogurt, honey, and vanilla until completely smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds before processing.",
+      "Process on the Lite Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Too firm after spinning", "fix": "Add 1 tablespoon pasteurized milk and respin." },
+      { "problem": "Icy pockets", "fix": "Let rest at room temperature 2 minutes then respin." }
+    ]
+  },
+  {
+    "id": "oat-date-caramel",
+    "name": "Oat Date Caramel",
+    "emoji": "🌾",
+    "base": "Oat milk",
+    "tags": ["Creamy", "Mild", "Oat milk", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "calories": 235,
+    "ingredients": [
+      { "item": "Medjool dates, pitted", "amount": "4 large" },
+      { "item": "Full-fat oat milk", "amount": "1.25 cups" },
+      { "item": "Rolled oats (quick cook)", "amount": "2 tbsp" },
+      { "item": "Pure vanilla extract", "amount": "0.5 tsp" },
+      { "item": "Pinch of sea salt", "amount": "1 pinch" }
+    ],
+    "instructions": [
+      "Soak pitted dates in warm water for 10 minutes, then drain.",
+      "Blend dates, oat milk, oats, vanilla, and salt until completely smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds, then process on the Lite Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Very dense after spinning", "fix": "Add 2 tablespoons oat milk and respin on the Respin setting." },
+      { "problem": "Crumbly", "fix": "Add 1 tablespoon oat milk and respin." }
+    ]
+  },
+  {
+    "id": "raspberry-coconut-sorbet",
+    "name": "Raspberry Coconut Sorbet",
+    "emoji": "🫐",
+    "base": "Coconut milk",
+    "tags": ["Fruity", "Sorbet", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 175,
+    "ingredients": [
+      { "item": "Fresh or frozen raspberries", "amount": "1.5 cups" },
+      { "item": "Light coconut milk", "amount": "0.75 cup" },
+      { "item": "Maple syrup", "amount": "2 tbsp" },
+      { "item": "Fresh lemon juice", "amount": "1 tsp" }
+    ],
+    "instructions": [
+      "Blend raspberries, coconut milk, maple syrup, and lemon juice until smooth.",
+      "Strain through a fine mesh sieve to remove seeds if desired.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water 30 seconds, then process on Sorbet setting."
+    ],
+    "respinFix": [
+      { "problem": "Too tart after spinning", "fix": "Drizzle 1 teaspoon maple syrup and fold gently before serving." },
+      { "problem": "Powdery texture", "fix": "Add 1 tablespoon coconut milk and respin on Sorbet." }
+    ]
+  },
+  {
+    "id": "pear-oat-cream",
+    "name": "Pear Oat Cream",
+    "emoji": "🍐",
+    "base": "Oat milk",
+    "tags": ["Fruity", "Mild", "Oat milk", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "calories": 170,
+    "ingredients": [
+      { "item": "Ripe pears, peeled and cored", "amount": "2 medium" },
+      { "item": "Unsweetened oat milk", "amount": "0.75 cup" },
+      { "item": "Honey", "amount": "1 tbsp" },
+      { "item": "Pure vanilla extract", "amount": "0.25 tsp" }
+    ],
+    "instructions": [
+      "Blend pears, oat milk, honey, and vanilla until silky smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds.",
+      "Process on the Lite Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Icy or chunky", "fix": "Let sit 2 minutes then respin on Lite Ice Cream." },
+      { "problem": "Not creamy enough", "fix": "Add 2 tablespoons oat milk and respin." }
+    ]
+  },
+  {
+    "id": "banana-peanut-butter-cream",
+    "name": "Banana Peanut Butter Cream",
+    "emoji": "🥜",
+    "base": "Pasteurized milk",
+    "tags": ["Creamy", "Banana", "Lite Ice Cream"],
+    "nauseaFriendly": false,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Ice Cream",
+    "calories": 310,
+    "ingredients": [
+      { "item": "Ripe bananas", "amount": "2 medium" },
+      { "item": "Pasteurized whole milk", "amount": "0.75 cup" },
+      { "item": "Natural peanut butter (no additives)", "amount": "2 tbsp" },
+      { "item": "Honey", "amount": "1 tbsp" }
+    ],
+    "instructions": [
+      "Blend bananas, milk, peanut butter, and honey until completely smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds.",
+      "Process on the Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Very dense", "fix": "Add 2 tablespoons pasteurized milk and respin on Ice Cream." },
+      { "problem": "Crumbly", "fix": "Add 1 tablespoon peanut butter and 1 tablespoon milk, then respin." }
+    ]
+  },
+  {
+    "id": "watermelon-mint-sorbet",
+    "name": "Watermelon Mint Sorbet",
+    "emoji": "🍉",
+    "base": "Coconut water",
+    "tags": ["Fruity", "Minty", "Sorbet", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 140,
+    "ingredients": [
+      { "item": "Fresh seedless watermelon chunks", "amount": "2 cups" },
+      { "item": "Coconut water", "amount": "0.5 cup" },
+      { "item": "Fresh mint leaves", "amount": "4 leaves" },
+      { "item": "Fresh lime juice", "amount": "1 tsp" },
+      { "item": "Maple syrup", "amount": "1 tbsp" }
+    ],
+    "instructions": [
+      "Blend watermelon, coconut water, mint, lime juice, and maple syrup until smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds.",
+      "Process on the Sorbet setting."
+    ],
+    "respinFix": [
+      { "problem": "Too watery after spinning", "fix": "Return to freezer for 20 minutes and respin on Sorbet." },
+      { "problem": "Icy texture", "fix": "Let sit 3 minutes at room temperature then respin." }
+    ]
+  },
+  {
+    "id": "apple-cinnamon-oat",
+    "name": "Apple Cinnamon Oat",
+    "emoji": "🍎",
+    "base": "Oat milk",
+    "tags": ["Fruity", "Mild", "Oat milk", "Dairy-free", "Nausea-safe"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Sorbet",
+    "calories": 185,
+    "ingredients": [
+      { "item": "Unsweetened applesauce", "amount": "1 cup" },
+      { "item": "Unsweetened oat milk", "amount": "0.75 cup" },
+      { "item": "Ground cinnamon", "amount": "0.25 tsp" },
+      { "item": "Maple syrup", "amount": "1.5 tbsp" },
+      { "item": "Quick-cook oats", "amount": "2 tbsp" }
+    ],
+    "instructions": [
+      "Blend applesauce, oat milk, cinnamon, maple syrup, and oats until smooth.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds.",
+      "Process on the Sorbet setting."
+    ],
+    "respinFix": [
+      { "problem": "Grainy from oats", "fix": "Add 1 tablespoon oat milk and respin." },
+      { "problem": "Not sweet enough", "fix": "Drizzle 1 teaspoon maple syrup and fold before serving." }
+    ]
+  },
+  {
+    "id": "coconut-mango-lime-cream",
+    "name": "Coconut Mango Lime Cream",
+    "emoji": "🥥",
+    "base": "Coconut milk",
+    "tags": ["Fruity", "Creamy", "Dairy-free", "Nausea-safe", "Lite Ice Cream"],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "calories": 245,
+    "ingredients": [
+      { "item": "Frozen mango chunks", "amount": "1 cup" },
+      { "item": "Full-fat coconut milk", "amount": "0.75 cup" },
+      { "item": "Pasteurized coconut yogurt", "amount": "0.25 cup" },
+      { "item": "Fresh lime juice", "amount": "1 tsp" },
+      { "item": "Maple syrup", "amount": "1 tbsp" }
+    ],
+    "instructions": [
+      "Blend mango, coconut milk, coconut yogurt, lime juice, and maple syrup until silky.",
+      "Pour into pint container to the max fill line.",
+      "Freeze for exactly 24 hours.",
+      "Run under warm water for 30 seconds.",
+      "Process on the Lite Ice Cream setting."
+    ],
+    "respinFix": [
+      { "problem": "Too rich or dense", "fix": "Add 2 tablespoons light coconut milk and respin." },
+      { "problem": "Icy after spinning", "fix": "Let sit 2 minutes then respin on Lite Ice Cream." }
+    ]
+  }
+]
