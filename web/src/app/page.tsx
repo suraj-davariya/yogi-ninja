@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NauseaCheckIn from "./components/NauseaCheckIn";
 import VirtualFreezer from "./components/VirtualFreezer";
 import TagSearch from "./components/TagSearch";
+import Typewriter from "./components/Typewriter";
 
 type NauseaLevel = "severe" | "moderate" | "mild" | "none";
 type DairyTolerance = "yes" | "plant-only" | "no";
@@ -17,66 +18,161 @@ interface CheckInResult {
 export default function Home() {
   const [checkInResult, setCheckInResult] = useState<CheckInResult | null>(null);
   const [activeTab, setActiveTab] = useState<"recipes" | "freezer">("recipes");
+  const [initializing, setInitializing] = useState(true);
+
+  useEffect(() => {
+    // Artificial initialization for brand effect
+    const timer = setTimeout(() => setInitializing(false), 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (initializing) {
+    return (
+      <div style={{ 
+        height: "100vh", 
+        display: "flex", 
+        flexDirection: "column",
+        alignItems: "center", 
+        justifyContent: "center",
+        background: "var(--color-background)"
+      }}>
+        <div style={{ width: "20rem" }}>
+          <Typewriter 
+            variant="glitch"
+            lines="INITIALIZING RECIPE ENGINE..."
+            className="mono-font"
+            style={{ fontSize: "0.875rem", color: "var(--color-primary)", letterSpacing: "0.1em" }}
+          />
+          <div style={{ 
+            height: "2px", 
+            width: "100%", 
+            background: "var(--color-border)", 
+            marginTop: "1rem",
+            overflow: "hidden",
+            position: "relative"
+          }}>
+            <div className="skeleton-shimmer" style={{ position: "absolute", inset: 0 }} />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div>
-      {/* Hero */}
+    <div className="animate-fade-slide" style={{ maxWidth: "80rem", margin: "0 auto", padding: "0 2rem" }}>
+      {/* Hero Section */}
       <section
         id="hero"
         style={{
           textAlign: "center",
-          padding: "8rem 0 6rem",
-          marginBottom: "4rem",
-          position: "relative"
+          padding: "10rem 0 8rem",
+          position: "relative",
+          overflow: "hidden"
         }}
       >
+        {/* Typographical Backdrop Layer */}
+        <div className="hero-backdrop-text" style={{ fontSize: "25vw" }}>
+          NINJA
+        </div>
+
         <div
+          className="animate-fade-slide"
           style={{
             display: "inline-flex",
             alignItems: "center",
             gap: "0.75rem",
-            background: "var(--stone-200)",
-            color: "var(--brand-primary)",
-            borderRadius: "9999px",
+            background: "var(--color-primary-soft)",
+            color: "var(--color-primary-deep)",
+            borderRadius: "var(--radius-pill)",
             padding: "0.6rem 1.5rem",
             fontSize: "0.75rem",
             fontWeight: 800,
-            letterSpacing: "0.1em",
+            letterSpacing: "0.15em",
             textTransform: "uppercase",
-            marginBottom: "2rem",
+            marginBottom: "3rem",
+            border: "1px solid var(--color-primary)",
+            boxShadow: "var(--shadow-sm)"
           }}
         >
-          Prenatal Safety • Dec 1 2026
+          <span style={{ fontSize: "1rem" }}>🧘</span> Artisan Precision
         </div>
-        <h1
-          className="display-font"
-          style={{
-            fontSize: "clamp(3rem, 10vw, 6rem)",
-            color: "var(--text-primary)",
-            margin: "0 0 2rem",
-            lineHeight: 1,
-          }}
-        >
-          Mindful <br />
-          <span style={{ fontStyle: "italic", fontWeight: 400 }}>Creami Creation.</span>
-        </h1>
-        <p
+
+        <div style={{ position: "relative", marginBottom: "4rem" }}>
+          <h1
+            style={{
+              fontSize: "clamp(4rem, 15vw, 10rem)",
+              lineHeight: 0.85,
+              letterSpacing: "-0.06em",
+              margin: 0,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center"
+            }}
+          >
+            <span 
+              className="display-font" 
+              style={{ 
+                fontSize: "0.4em", 
+                fontStyle: "italic", 
+                fontWeight: 600, 
+                color: "var(--color-text-secondary)",
+                marginBottom: "-0.1em",
+                marginLeft: "-2em"
+              }}
+            >
+              Mindful
+            </span>
+            <span 
+              className="typewriter--gradient" 
+              style={{ 
+                fontWeight: 900, 
+                fontFamily: "Inter, sans-serif",
+                textTransform: "uppercase"
+              }}
+            >
+              <Typewriter 
+                variant="manifesto" 
+                lines="CREAMI" 
+                startDelay={800}
+              />
+            </span>
+            <span 
+              className="display-font" 
+              style={{ 
+                fontSize: "0.5em", 
+                fontWeight: 700, 
+                color: "var(--color-accent)",
+                marginTop: "-0.2em",
+                marginLeft: "2.5em"
+              }}
+            >
+              Creation.
+            </span>
+          </h1>
+        </div>
+
+        <div
           style={{
             fontSize: "1.4rem",
-            color: "var(--text-secondary)",
+            color: "var(--color-text-secondary)",
             maxWidth: "40rem",
             margin: "0 auto",
             lineHeight: 1.5,
-            fontWeight: 400,
-            fontFamily: "var(--font-sans)"
+            fontWeight: 500,
+            minHeight: "4.5rem"
           }}
         >
-          A curated collection of vegetarian recipes filtered for your current state. 
-          Gentle, professional, and precise.
-        </p>
+          <p style={{ margin: "0 0 1rem" }}>Expertly curated recipes filtered for your prenatal journey.</p>
+          <Typewriter 
+            variant="whisper"
+            lines="Precision engineered. Artisan crafted. Endlessly yours."
+            startDelay={1800}
+            style={{ color: "var(--color-text-primary)", fontWeight: 600 }}
+          />
+        </div>
       </section>
 
-      {/* Daily check-in */}
+      {/* Daily Check-In Flow */}
       {!checkInResult ? (
         <section
           id="check-in-section"
@@ -84,7 +180,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginBottom: "5rem",
+            marginBottom: "6rem",
           }}
         >
           <NauseaCheckIn onComplete={(result) => setCheckInResult(result as CheckInResult)} />
@@ -94,48 +190,50 @@ export default function Home() {
           id="check-in-summary"
           className="yogi-card"
           style={{
-            padding: "1rem 1.5rem",
+            padding: "1.25rem 2rem",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             flexWrap: "wrap",
-            gap: "1rem",
-            marginBottom: "3rem",
-            borderLeft: "4px solid var(--yogi-violet)"
+            gap: "1.5rem",
+            marginBottom: "4rem",
+            borderLeft: "6px solid var(--color-primary)",
+            background: "var(--color-surface-glass)",
+            backdropFilter: "blur(8px)"
           }}
         >
-          <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-            <div style={{ fontSize: "1.5rem" }}>🧠</div>
-            <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-primary)", fontWeight: 500 }}>
-              Recipes matched to your check-in: 
-              <span style={{ color: "var(--yogi-violet)", fontWeight: 700, marginLeft: "0.5rem" }}>
+          <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
+            <div style={{ fontSize: "2rem" }}>✨</div>
+            <div>
+              <p style={{ margin: "0 0 0.25rem", fontSize: "0.75rem", fontWeight: 800, color: "var(--color-primary)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Active Profile</p>
+              <p style={{ margin: 0, fontSize: "1.1rem", color: "var(--color-text-primary)", fontWeight: 600 }}>
                 {checkInResult.nausea} nausea • {checkInResult.dairy} dairy • {checkInResult.flavor}
-              </span>
-            </p>
+              </p>
+            </div>
           </div>
           <button
             id="check-in-reset"
             onClick={() => setCheckInResult(null)}
             className="yogi-btn-ghost"
-            style={{ padding: "0.5rem 1.25rem", fontSize: "0.8rem" }}
+            style={{ padding: "0.6rem 1.5rem", fontSize: "0.875rem" }}
           >
-            Update Profile
+            Update Check-In
           </button>
         </section>
       )}
 
-      {/* Tab bar */}
+      {/* Main Experience Tabs */}
       <div
         id="main-tabs"
         role="tablist"
-        className="yogi-card"
+        className="glass-panel"
         style={{
           display: "flex",
           gap: "0.5rem",
-          padding: "0.4rem",
+          padding: "0.5rem",
           width: "fit-content",
-          marginBottom: "3rem",
-          borderRadius: "1.25rem",
+          margin: "0 auto 4rem",
+          borderRadius: "var(--radius-xl)",
           boxShadow: "var(--shadow-lg)"
         }}
       >
@@ -147,27 +245,27 @@ export default function Home() {
             aria-selected={activeTab === tab}
             onClick={() => setActiveTab(tab)}
             style={{
-              padding: "0.75rem 2rem",
-              borderRadius: "1rem",
+              padding: "0.875rem 2.5rem",
+              borderRadius: "var(--radius-lg)",
               border: "none",
               cursor: "pointer",
               fontWeight: 700,
-              fontSize: "0.95rem",
-              transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+              fontSize: "1rem",
+              transition: "all var(--duration-medium) cubic-bezier(0.4, 0, 0.2, 1)",
               background: activeTab === tab
-                ? "var(--gradient-primary)"
+                ? "var(--gradient-cta)"
                 : "transparent",
-              color: activeTab === tab ? "#fff" : "var(--text-muted)",
-              boxShadow: activeTab === tab ? "0 10px 15px -3px rgba(99, 102, 241, 0.3)" : "none"
+              color: activeTab === tab ? "var(--color-text-inverse)" : "var(--color-text-muted)",
+              boxShadow: activeTab === tab ? "var(--shadow-cta)" : "none"
             }}
           >
-            {tab === "recipes" ? "🍦 Discover Recipes" : "🧊 My Virtual Freezer"}
+            {tab === "recipes" ? "🍦 Discover" : "❄️ The Vault"}
           </button>
         ))}
       </div>
 
-      {/* Tab content */}
-      <div id="tab-content">
+      {/* Experience Content */}
+      <div id="tab-content" style={{ paddingBottom: "8rem" }}>
         {activeTab === "recipes" && (
           <TagSearch
             nauseaFilter={checkInResult?.nausea ?? null}
