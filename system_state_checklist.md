@@ -9,8 +9,8 @@
 2. Phase Two: UI Component Generation (Complete)
 3. Phase Three: Data Ingestion Batch 1 (Complete — 12 hand-crafted recipes)
 4. Phase Four-A: Synthesis Engine v1 (Complete — 4 recipes ingested, BUT with quality bugs)
-5. Phase Four-B: Fix Synthesis Quality + Expand (Pending — next agent picks up here)
-6. Phase Five: GitHub Action Automation (Blocked on Phase 4b)
+5. Phase Four-B: Fix Synthesis Quality + Expand (Complete)
+6. Phase Five: GitHub Action Automation (Pending — next up)
 
 ## Phase Two Sub-Tasks (All Complete)
 
@@ -46,13 +46,13 @@
 **Goal:** Remove the 4 broken recipes, fix the pipeline, and add 6-10 new high-quality "Inspired By" recipes.
 
 ### Sub-Tasks
-- [ ] Remove the 4 broken synthesized recipes from `recipes.json` (IDs: `velvet-banana-silk`, `golden-mango-alchemy`, `artisan-strawberry-glow`, `zen-coconut-frost`)
-- [ ] Rewrite or replace `scripts/ingest_local_recipes.py` to produce clean, gold-standard output
-- [ ] Add 6-10 new "Inspired By" recipes to `recipes.json` using only approved ingredients (see NEXT_AGENT.md for candidate list)
-- [ ] Validate all recipes: no HTML in text, no gram measurements, correct nausea/dairy flags
-- [ ] Update this checklist and `progress_checklist.md` after each sub-task
-- [ ] Write `skills/skill-10-recipe-quality-fix.md`
-- [ ] Commit with Gitmoji
+- [x] Remove the 4 broken synthesized recipes from `recipes.json` — completed by ANTIGRAVITY at 2026-05-13T00:41:00Z
+- [x] Rewrite or replace `scripts/ingest_local_recipes.py` to produce clean, gold-standard output — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
+- [x] Add 6-10 new "Inspired By" recipes to `recipes.json` using only approved ingredients — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
+- [x] Validate all recipes: no HTML in text, no gram measurements, correct nausea/dairy flags — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
+- [x] Update this checklist and `progress_checklist.md` after each sub-task — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
+- [x] Write `skills/skill-10-recipe-quality-fix.md` — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
+- [x] Commit with Gitmoji — completed by ANTIGRAVITY at 2026-05-13T02:22:00Z
 
 ## Phase Five: GitHub Action Automation (Blocked)
 

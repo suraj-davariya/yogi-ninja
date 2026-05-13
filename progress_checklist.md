@@ -52,11 +52,11 @@
 
 ## Phase Four-B: Fix Synthesis Quality + Expand (Pending)
 
-- [ ] Remove the 4 broken synthesized recipes from `recipes.json`
-- [ ] Rewrite synthesis engine to produce gold-standard quality output
-- [ ] Add 6-10 new "Inspired By" recipes using only approved ingredients
-- [ ] Validate all recipes pass quality checks
-- [ ] Write skill-10 log
+- [x] Remove the 4 broken synthesized recipes from `recipes.json`
+- [x] Rewrite synthesis engine to produce gold-standard quality output
+- [x] Add 10 new "Inspired By" recipes using only approved ingredients
+- [x] Validate all recipes pass quality checks
+- [x] Write skill-10 log
 
 ## Phase Five: GitHub Action Automation (Blocked on 4b)
 
