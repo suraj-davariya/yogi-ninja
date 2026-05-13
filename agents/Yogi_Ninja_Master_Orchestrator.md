@@ -16,7 +16,7 @@ The system is managed by a team of specialized AI agents. They must follow a str
 ## 3. Data Ingestion and Recipe Sourcing
 The application must dynamically scrape, filter, and normalize new recipes from the internet while adhering to strict dietary constraints.
 * **How It Sources Data:** Read `AI-Autonomous-Execution-Pipeline.md` (Outlines the four phase pipeline: Scraping, Filtration, Generation, and Batch Tracking).
-* **Where It Gets Data:** Read `Jumpstarter-Git-Repositories-and-Scra.md` (Provides the GitHub links for the `ice-creamery` baseline data and `recipe-scrapers` tools).
+* **Where It Gets Data:** Read `Jumpstarter-Git-Repositories-and-Scra.md` (Provides the GitHub links for the `artisan-baseline` baseline data and `recipe-scrapers` tools).
 
 ## 4. User Interface and Application Features
 The web application must be a functional utility, not just a static database. It requires custom dashboards and interactive trackers.

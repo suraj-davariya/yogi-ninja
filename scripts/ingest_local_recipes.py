@@ -171,7 +171,7 @@ def map_to_ninja_schema(raw_recipe):
     }
 
 def parse_markdown_recipe(file_path):
-    """Improved markdown parser for the ice-creamery format."""
+    """Improved markdown parser for the artisan baseline format."""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -191,7 +191,7 @@ def parse_markdown_recipe(file_path):
         lines = ing_section.group(1).strip().split('\n')
         for line in lines:
             line = line.strip()
-            # Handle the specific markdown format in ice-creamery
+            # Handle the specific markdown format in the source library
             match = re.search(r'[*-] _([^%_]+)_ ([^•\n]+)', line)
             if match:
                 ingredients.append({"amount": match.group(1).strip(), "item": match.group(2).strip()})
@@ -203,7 +203,7 @@ def parse_markdown_recipe(file_path):
     }
 
 def main():
-    base_path = Path("external/ice-creamery/recipes")
+    base_path = Path("external/artisan-baseline/recipes")
     output_path = Path("web/src/data/recipes.json")
     
     # Targeted flavor profiles for Phase 4b

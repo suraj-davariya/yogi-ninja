@@ -1,0 +1,43 @@
+name: Daily Recipe Discovery
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight UTC
+  workflow_dispatch: # Allow manual triggers
+
+jobs:
+  scrape-and-ingest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Yogi Ninja
+        uses: actions/checkout@v4
+
+      - name: Checkout external recipe baseline
+        uses: actions/checkout@v4
+        with:
+          repository: jhermann/ice-creamery # Reference for bot, hidden from primary logic
+          path: external/artisan-baseline
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Synthesis Engine
+        run: |
+          python3 scripts/ingest_local_recipes.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Yogi Ninja Bot"
+          git config --global user.email "bot@yogi-ninja.art"
+          git add web/src/data/recipes.json
+          if git diff --staged --quiet; then
+            echo "No changes in recipes.json"
+          else
+            git commit -m "✨ chore(data): automated daily recipe discovery [skip ci]"
+            git push
+          fi

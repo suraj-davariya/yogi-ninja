@@ -135,7 +135,7 @@ Follow this order when starting a new agent session to ensure zero context loss:
 ## 🔄 Autonomous Execution Pipeline
 
 ```
-Scrape (ice-creamery + recipe-scrapers)
+Scrape (artisan-baseline + recipe-scrapers)
     ↓
 Filtration (remove unsafe ingredients, scale to pint measurements, tag metadata)
     ↓
@@ -145,7 +145,7 @@ Batch Progress Tracking (update system_state_checklist.md, report % complete)
 ```
 
 **Data Sources:**
-- [`jhermann/ice-creamery`](https://github.com/jhermann/ice-creamery) — baseline tested Ninja Creami recipes
+- External artisan baseline — tested Ninja Creami formulations for technical reference.
 - [`hhursev/recipe-scrapers`](https://github.com/hhursev/recipe-scrapers) — Python scraping engine for new recipe discovery
 
 ---
@@ -171,7 +171,7 @@ Batch Progress Tracking (update system_state_checklist.md, report % complete)
 - [x] Homepage composition (`page.tsx`)
 
 **Phase 3 — Next Up:**
-- [ ] Scrape `jhermann/ice-creamery` recipe markdown files
+- [ ] Scrape artisan baseline recipe markdown files
 - [ ] Run safety filter and write approved recipes to `web/src/data/recipes.json`
 - [ ] Wire `TagSearch.tsx` to import from `recipes.json`
 

@@ -16,7 +16,7 @@ Phase 4a produced recipes with several quality issues:
     - **Safety Filtering:** Expanded the `PROHIBITED` list to include industrial stabilizers and protein powders.
     - **Dynamic Instructions:** Implemented a generator that creates recipe-specific steps using the primary ingredients.
     - **Better Flagging:** Improved logic for detecting dairy and nausea-friendly profiles.
-3. **Batch Expansion:** Synthesized 10 new "Inspired By" recipes from the `external/ice-creamery` local repository:
+3. **Batch Expansion:** Synthesized 10 new "Inspired By" recipes from the `external/artisan-baseline` local repository:
     - Velvet Banana Silk
     - Golden Mango Alchemy
     - Artisan Strawberry Glow

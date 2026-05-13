@@ -15,7 +15,7 @@ I developed a Python-based **Synthesis Engine** (`scripts/ingest_local_recipes.p
 5.  **Schema Alignment**: Maps the transformed data directly to the canonical `Recipe` schema used by the Next.js frontend.
 
 ## Results
-- Successfully processed 4 flagship recipes from the `ice-creamery` repository.
+- Successfully processed 4 flagship recipes from the `artisan-baseline` repository.
 - Verified that all "copied" aspects were removed in favor of original brand-voice instructions.
 - Committed changes to the repository following SDLC best practices.
 

@@ -28,13 +28,13 @@ Check `system_state_checklist.md` first to find the current phase, then do exact
 
 ## 🚨 CRITICAL: Phase 4a Synthesis Engine Has Quality Bugs
 
-The current `scripts/ingest_local_recipes.py` was a proof-of-concept. It successfully ingested 4 recipes from `external/ice-creamery/` but produced **unacceptable output** that is currently live in `recipes.json`. These bugs MUST be fixed before expanding to more recipes.
+The current `scripts/ingest_local_recipes.py` was a proof-of-concept. It successfully ingested 4 recipes from `external/artisan-baseline/` but produced **unacceptable output** that is currently live in `recipes.json`. These bugs MUST be fixed before expanding to more recipes.
 
 ### Bug 1: Raw Markdown/HTML in ingredient names
 The parser is not stripping the markdown link syntax from ingredient names. Example of what is in `recipes.json` right now:
 
 ```json
-"item": "[Soy milk 1.6% (sugar-free) \\[Berief\\]](/ice-creamery/info/ingredients/#soy-milk){target=\"_blank\"}<sup>↗</sup>"
+"item": "[Soy milk 1.6% (sugar-free) \\[Berief\\]](/artisan-baseline/info/ingredients/#soy-milk){target=\"_blank\"}<sup>↗</sup>"
 ```
 
 **Expected:** `"Soy milk (sugar-free)"` — clean, human-readable text only.
@@ -66,7 +66,7 @@ These are the failure patterns that waste time and produce nothing:
 | Run `npm install` for more than 2 attempts | Skip it. Write code files instead. The dev server handles compilation. |
 | Explain what you're about to do for 3+ paragraphs | Write the code first. Comment after if needed. |
 | Re-read all files before acting | Read `system_state_checklist.md`, find the next task, do it. |
-| Try to scrape the internet mid-session | Use only the local `external/ice-creamery/` repo or write recipes directly as JSON. |
+| Try to scrape the internet mid-session | Use only the local `external/artisan-baseline/` repo or write recipes directly as JSON. |
 | Run `npm run build` or `npm run lint` | Don't. The dev server shows errors live. |
 | Re-build any Phase 2 component | They are all complete. Do not touch them. |
 | Create parallel interfaces or duplicate schemas | The `Recipe` interface in `RecipeCard.tsx` is the only one. |
@@ -210,8 +210,8 @@ yogi-ninja/
 ├── scripts/
 │   └── ingest_local_recipes.py        ← Synthesis engine (NEEDS FIXING, see Phase 4b)
 │
-├── external/                          ← GITIGNORED. Local clone of jhermann/ice-creamery
-│   └── ice-creamery/recipes/          ← ~130 recipe folders, each with README.md
+├── external/                          ← GITIGNORED. Local clone of artisan-baseline
+│   └── artisan-baseline/recipes/          ← ~130 recipe folders, each with README.md
 │
 ├── web/src/app/
 │   ├── components/
@@ -286,7 +286,7 @@ If the token limit is reached, the next agent reads `system_state_checklist.md` 
 
 ### Goal: Fix the Synthesis Engine and produce high-quality recipes
 
-The `external/ice-creamery/` repo contains ~130 Ninja Creami recipes in markdown format. Most use industrial stabilizers, artificial sweeteners, and alcohol that violate our safety rules. The job is to **extract flavor inspiration** from that repo and produce clean, pantry-friendly Yogi Ninja recipes.
+The `external/artisan-baseline/` repo contains ~130 Ninja Creami recipes in markdown format. Most use industrial stabilizers, artificial sweeteners, and alcohol that violate our safety rules. The job is to **extract flavor inspiration** from that repo and produce clean, pantry-friendly Yogi Ninja recipes.
 
 ### Strategy: "Inspired By" Not "Copied From"
 
@@ -302,11 +302,11 @@ Do NOT try to mechanically parse and convert the source recipes. Most of them ar
 
 1. **Fix: Remove the 4 broken synthesized recipes** from `recipes.json` (IDs: `velvet-banana-silk`, `golden-mango-alchemy`, `artisan-strawberry-glow`, `zen-coconut-frost`)
 2. **Fix: Rewrite `scripts/ingest_local_recipes.py`** to produce clean output matching the gold-standard quality (or replace it with a simpler approach)
-3. **Add: 6 to 10 new "Inspired By" recipes** to `recipes.json`, drawing flavor inspiration from `external/ice-creamery/` but using only approved ingredients
+3. **Add: 6 to 10 new "Inspired By" recipes** to `recipes.json`, drawing flavor inspiration from `external/artisan-baseline/` but using only approved ingredients
 4. **Verify: All recipes in `recipes.json` pass validation** — no HTML/markdown in text, no gram measurements, correct flags
 5. **Update: `system_state_checklist.md` and `progress_checklist.md`** after each sub-task
 
-### Candidate flavor profiles from `external/ice-creamery/` worth exploring
+### Candidate flavor profiles from `external/artisan-baseline/` worth exploring
 
 | Source Recipe | Flavor Inspiration | Yogi Ninja Approach |
 |---|---|---|
@@ -362,7 +362,7 @@ A: This file already distills everything you need from them. Read the originals 
 **Q: A recipe ingredient seems borderline. Is it safe?**
 A: When in doubt, skip it. If it's not on the approved bases list above, it does not belong in a recipe.
 
-**Q: Can I use ingredients from `external/ice-creamery/` directly?**
+**Q: Can I use ingredients from `external/artisan-baseline/` directly?**
 A: No. Use that repo for **flavor inspiration only**. Write your own recipes from scratch using the approved ingredients list.
 
 **Q: `npm install` is failing.**

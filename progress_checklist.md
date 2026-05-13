@@ -37,7 +37,7 @@
 
 ## Phase Four-A: Synthesis Engine v1 (Complete — With Bugs)
 
-- [x] Clone `jhermann/ice-creamery` to `external/ice-creamery/`
+- [x] Clone `artisan-baseline` to `external/artisan-baseline/`
 - [x] Create `scripts/ingest_local_recipes.py` — synthesis engine v1
 - [x] Ingest 4 recipes from local source (Velvet Banana Silk, Golden Mango Alchemy, Artisan Strawberry Glow, Zen Coconut Frost)
 - [x] Add `/external/` to `.gitignore`
@@ -58,8 +58,8 @@
 - [x] Validate all recipes pass quality checks
 - [x] Write skill-10 log
 
-## Phase Five: GitHub Action Automation (Blocked on 4b)
+## Phase Five: GitHub Action Automation (In Progress)
 
-- [ ] Create `.github/workflows/daily-scrape.yml`
-- [ ] Configure cron schedule for periodic recipe updates
+- [x] Create `.github/workflows/daily-scrape.yml`
+- [x] Configure cron schedule for periodic recipe updates
 - [ ] Test with manual trigger
