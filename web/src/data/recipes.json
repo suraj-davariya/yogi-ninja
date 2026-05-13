@@ -671,12 +671,12 @@
     "emoji": "\ud83c\udf4c",
     "base": "Plant milk",
     "tags": [
-      "Fruity",
       "Artisan",
-      "Safety-Filtered"
+      "Safety-Filtered",
+      "Nausea-safe"
     ],
     "nauseaFriendly": true,
-    "dairyFree": true,
+    "dairyFree": false,
     "pintVolume": "16 oz (full pint)",
     "freezeTime": "24 hours",
     "spinSetting": "Lite Ice Cream",
@@ -686,41 +686,29 @@
         "amount": "1.9 medium"
       },
       {
-        "item": "[Cottage Cheese 4% \\[REWE Bio\\]](/ice-creamery/info/ingredients/#cottage-cheese){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "100g"
-      },
-      {
-        "item": "[Glycerin (E422, VG) \\[hd-line\\]](/ice-creamery/info/ingredients/#vegetable-glycerin-glycerol-vg-e422){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "15g"
+        "item": "Cottage Cheese 4%",
+        "amount": "0.5 cups"
       },
       {
         "item": "Lemon juice",
-        "amount": "10ml"
+        "amount": "2.0 tsp"
       },
       {
-        "item": "[Soy milk 1.6% (sugar-free) \\[Berief\\]](/ice-creamery/info/ingredients/#soy-milk){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "275ml"
+        "item": "Soy milk 1.6% (sugar-free)",
+        "amount": "1.15 cups"
       },
       {
-        "item": "Artisan Honey",
-        "amount": "2 tbsp"
-      },
-      {
-        "item": "[Whey + Casein protein (grass-fed) \\[Vilgain\\]](/ice-creamery/info/ingredients/#whey-protein){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "10g"
-      },
-      {
-        "item": "[Salty Stability \\[Inulin / GMS / CMC / Guar / XG / Salt\\]](/ice-creamery/S/Salty%20Stability/){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "10g"
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
       }
     ],
     "instructions": [
-      "Prepare your harvest by ensuring all ingredients are fresh and at room temperature for optimal fusion.",
-      "Combine the base elements in a high-speed blender, allowing the textures to merge into a single, cohesive silk.",
-      "Pour the resulting alchemy into your Ninja Creami pint, taking care not to exceed the maximum threshold.",
-      "Secure the vessel and allow it to rest in the sub-zero chamber for exactly 24 hours of cold-conditioning.",
-      "Once ready, initiate the Lite Ice Cream cycle to transform the frozen block into an artisan masterpiece.",
-      "If the texture requires refinement, utilize a single Respin cycle with a touch of fresh liquid."
+      "Gently combine your bananas (peeled) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
     ],
     "respinFix": [
       {
@@ -739,11 +727,10 @@
     "emoji": "\ud83c\udf66",
     "base": "Plant milk",
     "tags": [
-      "Fruity",
       "Artisan",
       "Safety-Filtered"
     ],
-    "nauseaFriendly": true,
+    "nauseaFriendly": false,
     "dairyFree": true,
     "pintVolume": "16 oz (full pint)",
     "freezeTime": "24 hours",
@@ -751,39 +738,19 @@
     "ingredients": [
       {
         "item": "Water (hot)",
-        "amount": "150ml"
+        "amount": "10.0 tbsp"
       },
       {
-        "item": "[Coconut Milk Powder 54% \\[Green Essence\\]](/ice-creamery/info/ingredients/#coconut-milk){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "0.31 cups"
-      },
-      {
-        "item": "[Glycerol Monostearate (E471) \\[Bulk\\]](/ice-creamery/info/ingredients/#glycerol-monostearate-gms-e471){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "2g"
+        "item": "Coconut Milk Powder 54%",
+        "amount": "0.3 cups"
       },
       {
         "item": "Mango",
-        "amount": "300g"
+        "amount": "2.0 cups"
       },
       {
         "item": "Lemon juice",
-        "amount": "30ml"
-      },
-      {
-        "item": "[Glycerin (E422, VG) \\[hd-line\\]](/ice-creamery/info/ingredients/#vegetable-glycerin-glycerol-vg-e422){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "15g"
-      },
-      {
-        "item": "Artisan Honey",
-        "amount": "2 tbsp"
-      },
-      {
-        "item": "[Salty Stability \\[Inulin / GMS / CMC / Guar / XG / Salt\\]](/ice-creamery/S/Salty%20Stability/){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "10g"
-      },
-      {
-        "item": "[Waxy Maize Starch (E1442) \\[Ultratex\\]](/ice-creamery/info/ingredients/#waxy-maize-starch-e1442){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "5g"
+        "amount": "2.0 tbsp"
       },
       {
         "item": "Cardamom",
@@ -791,16 +758,20 @@
       },
       {
         "item": "Water to MAX line",
-        "amount": "43ml"
+        "amount": "2.9 tbsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
       }
     ],
     "instructions": [
-      "Prepare your harvest by ensuring all ingredients are fresh and at room temperature for optimal fusion.",
-      "Combine the base elements in a high-speed blender, allowing the textures to merge into a single, cohesive silk.",
-      "Pour the resulting alchemy into your Ninja Creami pint, taking care not to exceed the maximum threshold.",
-      "Secure the vessel and allow it to rest in the sub-zero chamber for exactly 24 hours of cold-conditioning.",
-      "Once ready, initiate the Lite Ice Cream cycle to transform the frozen block into an artisan masterpiece.",
-      "If the texture requires refinement, utilize a single Respin cycle with a touch of fresh liquid."
+      "Gently combine your water (hot) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
     ],
     "respinFix": [
       {
@@ -819,64 +790,47 @@
     "emoji": "\ud83c\udf53",
     "base": "Plant milk",
     "tags": [
-      "Fruity",
       "Artisan",
       "Safety-Filtered"
     ],
-    "nauseaFriendly": true,
-    "dairyFree": true,
+    "nauseaFriendly": false,
+    "dairyFree": false,
     "pintVolume": "16 oz (full pint)",
     "freezeTime": "24 hours",
     "spinSetting": "Lite Ice Cream",
     "ingredients": [
       {
-        "item": "[Soy milk 1.6% (sugar-free) \\[Berief\\]](/ice-creamery/info/ingredients/#soy-milk){target=\"_blank\"}<sup>\u2197</sup> (\u22481 cup + 2 fl oz)",
-        "amount": "300ml"
+        "item": "Soy milk 1.6% (sugar-free) (1 cup + 2 fl oz)",
+        "amount": "1.25 cups"
       },
       {
-        "item": "Strawberries (\u22487 oz + 1 tbsp + 2 \u00bd tsp) <a id=\"id-93f3a24\" href=\"https://jhermann.github.io/ice-creamery/info/nutrition/#id-93f3a24\">\u2139\ufe0f</a>",
-        "amount": "225g"
+        "item": "Strawberries (7 oz + 1 tbsp + 2 \u00bd tsp)",
+        "amount": "1.1 cups"
       },
       {
-        "item": "[Cream Cheese 23% \\[Exquisa\\]](/ice-creamery/info/ingredients/#cream-cheese){target=\"_blank\"}<sup>\u2197</sup> (\u22481 oz + 1 tbsp + 1 \u00bd tsp)",
-        "amount": "50g"
+        "item": "Cream Cheese 23% (1 oz + 1 tbsp + 1 \u00bd tsp)",
+        "amount": "3.3 tbsp"
       },
       {
-        "item": "[Glycerin (E422, VG) \\[hd-line\\]](/ice-creamery/info/ingredients/#vegetable-glycerin-glycerol-vg-e422){target=\"_blank\"}<sup>\u2197</sup> (\u22481 tbsp)",
-        "amount": "15g"
+        "item": "Beet Root Powder (organic) (\u00bd tsp)",
+        "amount": "0.4 tsp"
       },
       {
-        "item": "Artisan Honey",
-        "amount": "2 tbsp"
-      },
-      {
-        "item": "[Whey + Casein protein (grass-fed) \\[Vilgain\\]](/ice-creamery/info/ingredients/#whey-protein){target=\"_blank\"}<sup>\u2197</sup> (\u22481 tbsp + 1 tsp) <a id=\"id-b954be3\" href=\"https://jhermann.github.io/ice-creamery/info/nutrition/#id-b954be3\">\u2139\ufe0f</a>",
-        "amount": "20g"
-      },
-      {
-        "item": "[Salty Stability \\[Inulin / GMS / CMC / Guar / XG / Salt\\]](/ice-creamery/S/Salty%20Stability/){target=\"_blank\"}<sup>\u2197</sup> (\u22481 tbsp)",
-        "amount": "15g"
-      },
-      {
-        "item": "Designer Flavor Powder [ESN] (\u2248\u00bd tsp)",
-        "amount": "3g"
-      },
-      {
-        "item": "Beet Root Powder (organic) [Mandoi] (\u2248\u00bd tsp)",
-        "amount": "2g"
-      },
-      {
-        "item": "Strawberry slices freeze-dried [EWL] (\u22481 tbsp)",
+        "item": "Strawberry slices freeze-dried (1 tbsp)",
         "amount": "0.1 cups"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
       }
     ],
     "instructions": [
-      "Prepare your harvest by ensuring all ingredients are fresh and at room temperature for optimal fusion.",
-      "Combine the base elements in a high-speed blender, allowing the textures to merge into a single, cohesive silk.",
-      "Pour the resulting alchemy into your Ninja Creami pint, taking care not to exceed the maximum threshold.",
-      "Secure the vessel and allow it to rest in the sub-zero chamber for exactly 24 hours of cold-conditioning.",
-      "Once ready, initiate the Lite Ice Cream cycle to transform the frozen block into an artisan masterpiece.",
-      "If the texture requires refinement, utilize a single Respin cycle with a touch of fresh liquid."
+      "Gently combine your soy milk 1.6% (sugar-free) (1 cup + 2 fl oz) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
     ],
     "respinFix": [
       {
@@ -895,9 +849,9 @@
     "emoji": "\ud83c\udf3f",
     "base": "Plant milk",
     "tags": [
-      "Creamy",
       "Artisan",
-      "Safety-Filtered"
+      "Safety-Filtered",
+      "Nausea-safe"
     ],
     "nauseaFriendly": true,
     "dairyFree": true,
@@ -906,49 +860,469 @@
     "spinSetting": "Lite Ice Cream",
     "ingredients": [
       {
-        "item": "Yogurt mild 4% [REWE Bio]",
-        "amount": "400ml"
+        "item": "Yogurt mild 4%",
+        "amount": "1.67 cups"
       },
       {
-        "item": "[Soy milk 1.6% (sugar-free) \\[Berief\\]](/ice-creamery/info/ingredients/#soy-milk){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "150ml"
+        "item": "Soy milk 1.6% (sugar-free)",
+        "amount": "10.0 tbsp"
       },
       {
-        "item": "[Glycerin (E422, VG) \\[hd-line\\]](/ice-creamery/info/ingredients/#vegetable-glycerin-glycerol-vg-e422){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "10g"
-      },
-      {
-        "item": "[Coconut Milk Powder 54% \\[Green Essence\\]](/ice-creamery/info/ingredients/#coconut-milk){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "0.23 cups"
-      },
-      {
-        "item": "Artisan Honey",
-        "amount": "2 tbsp"
-      },
-      {
-        "item": "[Inulin \\[Vit4ever\\]](/ice-creamery/info/ingredients/#inulin){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "20g"
-      },
-      {
-        "item": "[Glycerol Monostearate (E471) \\[Bulk\\]](/ice-creamery/info/ingredients/#glycerol-monostearate-gms-e471){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "3g"
-      },
-      {
-        "item": "[Carboxymethyl Cellulose (CMC / E466) \\[GoodBake\\]](/ice-creamery/info/ingredients/#carboxymethyl-cellulose-cmc-e466){target=\"_blank\"}<sup>\u2197</sup>",
-        "amount": "1g"
+        "item": "Coconut Milk Powder 54%",
+        "amount": "0.2 cups"
       },
       {
         "item": "Salt",
-        "amount": "1g"
+        "amount": "0.2 tsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
       }
     ],
     "instructions": [
-      "Prepare your harvest by ensuring all ingredients are fresh and at room temperature for optimal fusion.",
-      "Combine the base elements in a high-speed blender, allowing the textures to merge into a single, cohesive silk.",
-      "Pour the resulting alchemy into your Ninja Creami pint, taking care not to exceed the maximum threshold.",
-      "Secure the vessel and allow it to rest in the sub-zero chamber for exactly 24 hours of cold-conditioning.",
-      "Once ready, initiate the Lite Ice Cream cycle to transform the frozen block into an artisan masterpiece.",
-      "If the texture requires refinement, utilize a single Respin cycle with a touch of fresh liquid."
+      "Gently combine your yogurt mild 4% and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "golden-peach-dream",
+    "name": "Golden Peach Dream",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered"
+    ],
+    "nauseaFriendly": false,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Soy milk 1.6% (sugar-free) (1 cup + 2 \u00be tsp)",
+        "amount": "1.04 cups"
+      },
+      {
+        "item": "Peaches in Grape Juice (drained) (1 cup + 2 \u00be tsp)",
+        "amount": "1.2 cups"
+      },
+      {
+        "item": "Salt (\u00bc tsp)",
+        "amount": "0.2 tsp"
+      },
+      {
+        "item": "Turmeric",
+        "amount": "1 pinch"
+      },
+      {
+        "item": "Cream 32% (2 fl oz + 1 tbsp)",
+        "amount": "5.0 tbsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your soy milk 1.6% (sugar-free) (1 cup + 2 \u00be tsp) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "summer-fruit-glow",
+    "name": "Summer Fruit Glow",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered",
+      "Nausea-safe"
+    ],
+    "nauseaFriendly": true,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Strawberries (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Water (cold) (3 fl oz + 2 \u00bc tsp)",
+        "amount": "6.7 tbsp"
+      },
+      {
+        "item": "Lemon juice (2 tsp)",
+        "amount": "2.0 tsp"
+      },
+      {
+        "item": "Salt (\u00bc tsp)",
+        "amount": "0.3 tsp"
+      },
+      {
+        "item": "Beet Root Powder (organic) (\u00bc tsp)",
+        "amount": "0.3 tsp"
+      },
+      {
+        "item": "Matcha green tea powder (organic) (\u00bc tsp)",
+        "amount": "0.2 tsp"
+      },
+      {
+        "item": "Turmeric",
+        "amount": "1 pinch"
+      },
+      {
+        "item": "Water to MAX line (2 fl oz + \u00bd tsp)",
+        "amount": "4.1 tbsp"
+      },
+      {
+        "item": "Galia melon (organic) (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Strawberries (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Watermelon (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Honeydew melon (organic) (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Kiwi (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Blueberries (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Cherries (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Mango (1 cup + 7 oz + 1 tbsp)",
+        "amount": "3.0 cups"
+      },
+      {
+        "item": "Bananas (ripe, peeled) + Strawberries (4:5) (1 cup + 7 oz + 1 tbsp)",
+        "amount": "3.8 medium"
+      },
+      {
+        "item": "Pineapple in juice (1 cup + 7 oz + 1 tbsp)",
+        "amount": "2.2 cups"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your strawberries (1 cup + 7 oz + 1 tbsp) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "zen-matcha-mist",
+    "name": "Zen Matcha Mist",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered"
+    ],
+    "nauseaFriendly": false,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Soy milk 1.6% (sugar-free)",
+        "amount": "1.46 cups"
+      },
+      {
+        "item": "Coconut milk 22%",
+        "amount": "6.7 tbsp"
+      },
+      {
+        "item": "Matcha green tea powder (organic)",
+        "amount": "0.8 tbsp"
+      },
+      {
+        "item": "Skim milk powder 1:10 (SMP)",
+        "amount": "0.1 cups"
+      },
+      {
+        "item": "Soy milk 1.6% (sugar-free)",
+        "amount": "6.0 tbsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your soy milk 1.6% (sugar-free) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "blueberry-tang-shimmer",
+    "name": "Blueberry Tang Shimmer",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered",
+      "Nausea-safe"
+    ],
+    "nauseaFriendly": true,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Buttermilk 1%",
+        "amount": "1.67 cups"
+      },
+      {
+        "item": "Blueberries (frozen)",
+        "amount": "0.6 cups"
+      },
+      {
+        "item": "Cream Cheese 23%",
+        "amount": "1.7 tbsp"
+      },
+      {
+        "item": "Buttermilk 1%",
+        "amount": "2.3 tbsp"
+      },
+      {
+        "item": "Strawberries",
+        "amount": "0.9 cups"
+      },
+      {
+        "item": "Blueberries",
+        "amount": "0.6 cups"
+      },
+      {
+        "item": "Mango",
+        "amount": "0.8 cups"
+      },
+      {
+        "item": "Bananas (ripe, peeled)",
+        "amount": "1.0 medium"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your buttermilk 1% and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "artisan-apple-strudel",
+    "name": "Artisan Apple Strudel",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered"
+    ],
+    "nauseaFriendly": false,
+    "dairyFree": true,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Apple Sauce (no added sugar)",
+        "amount": "1.46 cups"
+      },
+      {
+        "item": "Soy milk 1.6% (sugar-free)",
+        "amount": "0.83 cups"
+      },
+      {
+        "item": "Cinnamon (Ceylon)",
+        "amount": "0.3 tsp"
+      },
+      {
+        "item": "Stay BELOW the MAX line (leave room for mix-ins)",
+        "amount": "\u2755"
+      },
+      {
+        "item": "Almond slivers",
+        "amount": "1.0 tbsp"
+      },
+      {
+        "item": "Raisins (chopped)",
+        "amount": "0.7 tbsp"
+      },
+      {
+        "item": "Half a croissant, sliced",
+        "amount": "2.3 tbsp"
+      },
+      {
+        "item": "Vanilla Sauce (Topping)",
+        "amount": "5.0 tbsp"
+      },
+      {
+        "item": "Wafer Rolls",
+        "amount": "0.7 tbsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your apple sauce (no added sugar) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
+    ],
+    "respinFix": [
+      {
+        "problem": "Crystalline or dry",
+        "fix": "Add 1 tbsp of plant milk and execute a Respin protocol."
+      },
+      {
+        "problem": "Too firm",
+        "fix": "Allow the pint to sit at room temperature for 3 minutes before the final spin."
+      }
+    ]
+  },
+  {
+    "id": "artisan-creamy-watermelon",
+    "name": "Artisan Creamy Watermelon",
+    "emoji": "\ud83c\udf66",
+    "base": "Plant milk",
+    "tags": [
+      "Artisan",
+      "Safety-Filtered"
+    ],
+    "nauseaFriendly": false,
+    "dairyFree": false,
+    "pintVolume": "16 oz (full pint)",
+    "freezeTime": "24 hours",
+    "spinSetting": "Lite Ice Cream",
+    "ingredients": [
+      {
+        "item": "Watermelon (blended & strained)",
+        "amount": "2.6 cups"
+      },
+      {
+        "item": "Lemon juice",
+        "amount": "2.0 tsp"
+      },
+      {
+        "item": "Salt",
+        "amount": "0.3 tsp"
+      },
+      {
+        "item": "Beet Root Powder (organic)",
+        "amount": "0.2 tsp"
+      },
+      {
+        "item": "Cream 32%",
+        "amount": "5.3 tbsp"
+      },
+      {
+        "item": "Pure Maple Syrup",
+        "amount": "1 tbsp"
+      }
+    ],
+    "instructions": [
+      "Gently combine your watermelon (blended & strained) and other base elements in a high-speed blender.",
+      "Pulse until the mixture achieves a silken, unified consistency.",
+      "Pour the resulting alchemy into your Ninja Creami pint, ensuring you stay below the maximum threshold.",
+      "Secure the vessel and cold-condition in the sub-zero chamber for exactly 24 hours.",
+      "Once frozen, process on the appropriate setting to unveil the artisan texture.",
+      "If further refinement is desired, a single Respin cycle will perfect the silkiness."
     ],
     "respinFix": [
       {

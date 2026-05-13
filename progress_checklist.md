@@ -1,6 +1,12 @@
 # Progress Checklist
 
-> Last updated: 2026-05-12T03:37:00Z
+> Last updated: 2026-05-12T20:34:00-04:00
+
+## Phase One: Repository Setup (Complete)
+
+- [x] Initialize Next.js 16 project with TypeScript 5
+- [x] Configure ESLint, PostCSS, and project structure
+- [x] Create CONTRIBUTING.md and README.md
 
 ## Phase Two: UI Component Generation (Complete)
 
@@ -16,13 +22,44 @@
 
 ## Phase Three: Data Ingestion Batch 1 (Complete)
 
-- [x] Scrape `jhermann/ice-creamery` recipes
-- [x] Filter against pregnancy safety rules
+- [x] Write 12 hand-crafted pregnancy-safe recipes
+- [x] Filter against pregnancy safety rules (no raw eggs, alcohol, preservatives, artificial colors/flavors)
 - [x] Write output to `web/src/data/recipes.json`
 - [x] Wire `TagSearch.tsx` to use `recipes.json`
 
-## Phase Four: Data Ingestion Batch 2 (Pending)
+## Phase 3.5: Design System Evolution (Complete)
 
-- [ ] Set up daily cron job via `hhursev/recipe-scrapers`
-- [ ] Auto-filter and append new recipes to `recipes.json`
-- [ ] Trigger UI rebuild on new recipe additions
+- [x] Transition from Japandi Zen to Artisan Gold & Obsidian Black design system
+- [x] Implement glassmorphism on navigation and tab panels
+- [x] Add Elite Typewriter component with 6 motion variants
+- [x] Fix TypeScript variant types in Typewriter.tsx
+- [x] Polish all components (RecipeCard, TagSearch, Navigation, NauseaCheckIn, VirtualFreezer)
+
+## Phase Four-A: Synthesis Engine v1 (Complete — With Bugs)
+
+- [x] Clone `jhermann/ice-creamery` to `external/ice-creamery/`
+- [x] Create `scripts/ingest_local_recipes.py` — synthesis engine v1
+- [x] Ingest 4 recipes from local source (Velvet Banana Silk, Golden Mango Alchemy, Artisan Strawberry Glow, Zen Coconut Frost)
+- [x] Add `/external/` to `.gitignore`
+- [x] Clean up stale build artifacts and harden `.gitignore`
+
+### ⚠️ Quality Issues Found
+- [ ] Raw markdown/HTML in ingredient names needs to be stripped
+- [ ] Gram measurements need conversion to cups/tbsp/tsp
+- [ ] Industrial stabilizers (Glycerin, CMC, GMS) need to be removed
+- [ ] Identical instructions across all 4 recipes need to be individualized
+- [ ] Incorrect dairyFree flags need to be corrected
+
+## Phase Four-B: Fix Synthesis Quality + Expand (Pending)
+
+- [x] Remove the 4 broken synthesized recipes from `recipes.json`
+- [x] Rewrite synthesis engine to produce gold-standard quality output
+- [x] Add 10 new "Inspired By" recipes using only approved ingredients
+- [x] Validate all recipes pass quality checks
+- [x] Write skill-10 log
+
+## Phase Five: GitHub Action Automation (Blocked on 4b)
+
+- [ ] Create `.github/workflows/daily-scrape.yml`
+- [ ] Configure cron schedule for periodic recipe updates
+- [ ] Test with manual trigger
