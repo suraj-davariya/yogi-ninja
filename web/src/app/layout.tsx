@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+          data-theme="dark"
       className="h-full antialiased"
     >
       <body
